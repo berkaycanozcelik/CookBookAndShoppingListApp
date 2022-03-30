@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-import { Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class ShoppingListService {
-
-  constructor() { }
-=======
 import { Ingredient } from '../shared/ingredient.model';
 import { EventEmitter } from '@angular/core';
 
@@ -34,5 +24,4 @@ export class ShoppingListService {
     this.ingredients.push(...ingredients);
     this.ingredientsChanged.emit(this.ingredients.slice());
   }
->>>>>>> 31ffcd5c785b64b9ad32863a37b8308bd4fca050
 }
